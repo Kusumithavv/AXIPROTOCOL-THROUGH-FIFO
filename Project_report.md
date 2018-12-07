@@ -3,12 +3,12 @@ AMBA is an standard onchip Interconnect by ARM.
 # PROJECT: Simulation and synthesis of AMBA AXI4 Protocol.
 ==========================================================
 Design Modules:
-1> AXI FIFO (axi_fifo.v)
-    This is the Top module instantiating read and write transaction channel from master to the slave.
-2> AXI FIFO WRITE (axi_fifo_wr.v)
+- AXI FIFO (axi_fifo.v)
+    -This is the Top module instantiating read and write transaction channel from master to the slave.
+- AXI FIFO WRITE (axi_fifo_wr.v)
     -Transaction channel initiating write operation from master to the slave.
-      # SIGNAL DESCRIPTIONS:
-            WRITE ADDRESS CHANNEL:
+      -# SIGNAL DESCRIPTIONS:
+            -WRITE ADDRESS CHANNEL:
                   -AWID (MASTER TO SLAVE)
                     The identification tag for the write address group of signals. 
                   -AWADDR (MASTER TO SLAVE)
@@ -26,60 +26,60 @@ Design Modules:
                   -AWREADY (SLAVE TO MASTER)
                      Slave Indicates that the slave is ready to accept an address and associated control signals.
                      
-            WRITE DATA CHANNEL:
+            -WRITE DATA CHANNEL:
                   -WID (MASTER TO SLAVE)
-                      The ID tag of the write data transfer. 
+                      -The ID tag of the write data transfer. 
                   -WDATA (MASTER TO SLAVE)
-                       Write data.
+                       -Write data.
                   -WSTRB (MASTER TO SLAVE)
-                      Indicates that the byte lanes that hold valid data. There is one write strobe bit for each 8
+                      -Indicates that the byte lanes that hold valid data. There is one write strobe bit for each 8
                       bits of the write data bus.
                   -WLAST (MASTER TO SLAVE)
-                       Indicates the last transfer in a write burst. 
+                       -Indicates the last transfer in a write burst. 
                   -WVALID (MASTER TO SLAVE)
-                       This signal indicates that valid write data and strobes are available. 
+                       -This signal indicates that valid write data and strobes are available. 
                   -WREADY (SLAVE TO MASTER)
-                       This signal indicates that the slave can accept the write data
+                       -This signal indicates that the slave can accept the write data
                        
-            WRITE RESPONSE CHANNEL:
+            -WRITE RESPONSE CHANNEL:
                   -BID (SLAVE TO MASTER)
-                       The ID tag of the write response. 
+                       -The ID tag of the write response. 
                   -BRESP (SLAVE TO MASTER)
-                       Indicates the status of the write transaction. 
+                       -Indicates the status of the write transaction. 
                   -BVALID (SLAVE TO MASTER)
-                       Indicates that the channel is signaling a valid write response. 
+                       -Indicates that the channel is signaling a valid write response. 
                   -BREADY (MASTER TO SLAVE)
-                       Indicates that the master can accept a write response. 
+                       -Indicates that the master can accept a write response. 
 3> AXI FIFO READ (axi_fifo_rd.v)
       -Transaction channel initiating write operation from master to the slave.
           # SIGNAL DESCRIPTIONS
-              READ ADDRESS CHANNEL:
+             -READ ADDRESS CHANNEL:
                   -ARID (MASTER TO SLAVE)
-                       The identification tag for the read address group of signals.  
+                       -The identification tag for the read address group of signals.  
                   -ARADDR (MASTER TO SLAVE)
-                       The read address gives the address of the first transfer in a read burst transaction.  
+                       -The read address gives the address of the first transfer in a read burst transaction.  
                   -ARVALID (MASTER TO SLAVE)
-                       Indicates that the channel is signaling valid read address and control information. 
+                       -Indicates that the channel is signaling valid read address and control information. 
                   -ARREADY (SLAVE TO MASTER)
-                       Indicates that the slave is ready to accept an address and associated control signals. 
+                       -Indicates that the slave is ready to accept an address and associated control signals. 
                   -ARLEN (MASTER TO SLAVE)
-                       Indicates the exact number of transfers in a burst.  
+                       -Indicates the exact number of transfers in a burst.  
                   -ARSIZE (MASTER TO SLAVE)
-                       Indicates the size of each transfer in the burst.  
+                       -Indicates the size of each transfer in the burst.  
                   -ARBURST (MASTER TO SLAVE)
-                       The burst type and the size information determine how the address for each transfer
+                       -The burst type and the size information determine how the address for each transfer
                        within the burst is calculated. 
-            READ DATA CHANNEL:
+            -READ DATA CHANNEL:
                   -RID (SLAVE TO MASTER) 
-                      The identification tag for the read data group of signals that are generated by the slave
+                      -The identification tag for the read data group of signals that are generated by the slave
                   -RDATA (SLAVE TO MASTER)  
-                      Read data
+                      -Read data
                   -RLAST (SLAVE TO MASTER)
-                      Indicates the last transfer in a read burst.
+                      -Indicates the last transfer in a read burst.
                   -RVALID (SLAVE TO MASTER)
-                      The channel is signaling the required read data. 
+                      -The channel is signaling the required read data. 
                   -RREADY (SLAVE TO MASTER)
-                      Indicates that the master can accept the read data and response information. 
+                      -Indicates that the master can accept the read data and response information. 
 
 # TESTBENCH MODULE(tb_axi_fifo.v)
     -This module creates a DUT of the AXI FIFO design module. The DUT acts as a master for the axi_fifo module. 
