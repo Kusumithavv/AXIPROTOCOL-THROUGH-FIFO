@@ -9,6 +9,7 @@ AMBA is an standard onchip Interconnect by ARM.
 -__AXI FIFO WRITE (axi_fifo_wr.v)__  
     -Transaction channel initiating write operation from master to the slave.  
        __SIGNAL DESCRIPTIONS:__  
+       
              WRITE ADDRESS CHANNEL:_  
                   -AWID (MASTER TO SLAVE)  
                     The identification tag for the write address group of signals.  
@@ -54,6 +55,7 @@ AMBA is an standard onchip Interconnect by ARM.
 __AXI FIFO READ (axi_fifo_rd.v)__  
       -Transaction channel initiating write operation from master to the slave.  
            __SIGNAL DESCRIPTIONS__  
+           
              -_READ ADDRESS CHANNEL:_  
                   -ARID (MASTER TO SLAVE)  
                        -The identification tag for the read address group of signals.    
