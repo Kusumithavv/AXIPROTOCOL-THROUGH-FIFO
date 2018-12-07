@@ -1,5 +1,5 @@
 # AMBA -Advanced Microcontroller Bus Architecture
-AMBA is an standard onchip Interconnect by ARM.
+AMBA is an standard onchip Interconnect by ARM.  
 ![AMBA_SYSTEM] https://github.com/Kusumithavv/AXIPROTOCOL-THROUGH-FIFO/blob/master/IMAGES/iMAGES_AMBA/AMBA%20SYSTEM.png
 # PROJECT: Simulation and synthesis of AMBA AXI4 Protocol.
 ==========================================================
