@@ -6,11 +6,7 @@ AMBA is an standard onchip Interconnect by ARM.
 # PROJECT: Simulation and synthesis of AMBA AXI4 Protocol.
 ==========================================================
 > Design Modules:  
-
-
 <img width="576" alt="fifo_architecture" src="https://user-images.githubusercontent.com/38127428/49651394-0d790800-fa55-11e8-9ad4-76ed4b8b08c3.png">
-
-
 -__AXI FIFO (axi_fifo.v)__  
     - This is the Top module instantiating read and write transaction channel from master to the slave.
 -__AXI FIFO WRITE (axi_fifo_wr.v)__  
