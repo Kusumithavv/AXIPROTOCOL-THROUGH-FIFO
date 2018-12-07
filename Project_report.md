@@ -51,7 +51,7 @@ AMBA is an standard onchip Interconnect by ARM.
                        -Indicates that the channel is signaling a valid write response. 
                   -BREADY (MASTER TO SLAVE)
                        -Indicates that the master can accept a write response. 
-3> AXI FIFO READ (axi_fifo_rd.v)
+> AXI FIFO READ (axi_fifo_rd.v)
       -Transaction channel initiating write operation from master to the slave.
           # SIGNAL DESCRIPTIONS
              -READ ADDRESS CHANNEL:
