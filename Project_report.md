@@ -6,14 +6,19 @@ AMBA is an standard onchip Interconnect by ARM.
 # PROJECT: Simulation and synthesis of AMBA AXI4 Protocol.
 ==========================================================
 > Design Modules:  
-![FIFO_ARCHITECTURE]https://github.com/Kusumithavv/AXIPROTOCOL-THROUGH-FIFO/blob/master/IMAGES/iMAGES_AMBA/FIFO_ARCHITECTURE.png
+
+
+<img width="576" alt="fifo_architecture" src="https://user-images.githubusercontent.com/38127428/49651394-0d790800-fa55-11e8-9ad4-76ed4b8b08c3.png">
+
+
 -__AXI FIFO (axi_fifo.v)__  
     - This is the Top module instantiating read and write transaction channel from master to the slave.
 -__AXI FIFO WRITE (axi_fifo_wr.v)__  
     -Transaction channel initiating write operation from master to the slave.  
        __SIGNAL DESCRIPTIONS:__  
-       ![WRITE CHANNEL]https://github.com/Kusumithavv/AXIPROTOCOL-THROUGH-FIFO/blob/master/IMAGES/iMAGES_AMBA/WRITE%20CHANNEL.png
-       
+ 
+       <img width="576" alt="write channel" src="https://user-images.githubusercontent.com/38127428/49651439-30a3b780-fa55-11e8-80a9-708f258f2ef2.png">
+
              WRITE ADDRESS CHANNEL:_  
                   -AWID (MASTER TO SLAVE)  
                     The identification tag for the write address group of signals.  
@@ -56,8 +61,12 @@ AMBA is an standard onchip Interconnect by ARM.
                        -Indicates that the channel is signaling a valid write response. 
                   -BREADY (MASTER TO SLAVE)
                        -Indicates that the master can accept a write response. 
+<img width="594" alt="waveform for write channel" src="https://user-images.githubusercontent.com/38127428/49651540-7f515180-fa55-11e8-80fa-cd9801fe6da6.png">
+  <img width="640" alt="fifo_data" src="https://user-images.githubusercontent.com/38127428/49651645-c8090a80-fa55-11e8-8b11-d0b2234b92b5.png">
+         
 __AXI FIFO READ (axi_fifo_rd.v)__ 
-![READ_CHANNEL] https://github.com/Kusumithavv/AXIPROTOCOL-THROUGH-FIFO/blob/master/IMAGES/iMAGES_AMBA/READ%20CHANNEL.png
+<img width="576" alt="read channel" src="https://user-images.githubusercontent.com/38127428/49651488-5466fd80-fa55-11e8-945e-4784a4b27fa5.png">
+
       -Transaction channel initiating write operation from master to the slave.  
            __SIGNAL DESCRIPTIONS__  
            
@@ -88,7 +97,8 @@ __AXI FIFO READ (axi_fifo_rd.v)__
                       -The channel is signaling the required read data.   
                   -RREADY (SLAVE TO MASTER)  
                       -Indicates that the master can accept the read data and response information.   
-  
+ <img width="640" alt="read_waveform" src="https://user-images.githubusercontent.com/38127428/49651566-92fcb800-fa55-11e8-920a-b7bddbd60831.png">
+ 
 # TESTBENCH MODULE(tb_axi_fifo.v)  
     -This module creates a DUT of the AXI FIFO design module. The DUT acts as a master for the axi_fifo module.   
       
@@ -100,5 +110,7 @@ Timing slack :    5279ps
 Start-point  : WRITE/rd_ptr_reg_reg[17]/CK  
 End-point    : WRITE/wr_ptr_reg_reg[32]/D  
                   
+<img width="639" alt="synthesised_output" src="https://user-images.githubusercontent.com/38127428/49651678-dce59e00-fa55-11e8-83f7-49ba0ca48a61.png">
+
                   
 
