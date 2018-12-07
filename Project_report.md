@@ -9,22 +9,22 @@ AMBA is an standard onchip Interconnect by ARM.
 -__AXI FIFO WRITE (axi_fifo_wr.v)__  
     -Transaction channel initiating write operation from master to the slave.  
        __SIGNAL DESCRIPTIONS:__  
-             _WRITE ADDRESS CHANNEL:_  
-                  -__AWID (MASTER TO SLAVE)__  
+             WRITE ADDRESS CHANNEL:_  
+                  -AWID (MASTER TO SLAVE)  
                     The identification tag for the write address group of signals.  
-                  -__AWADDR (MASTER TO SLAVE)__  
+                  -AWADDR (MASTER TO SLAVE)  
                     The write address gives the address of the first transfer in a write burst transaction.   
-                  -__AWLEN (MASTER TO SLAVE)__  
+                  -AWLEN (MASTER TO SLAVE)  
                     The burst length gives the exact number of transfers in a burst. This information  
                     determines the number of data transfers associated with the address  
-                  -__AWSIZE (MASTER TO SLAVE)__  
+                  -AWSIZE (MASTER TO SLAVE)  
                     Indicates the size of each transfer in the burst.   
-                  -__AWBURST (MASTER TO SLAVE)__  
+                  -AWBURST (MASTER TO SLAVE)  
                      The burst type and the size information, determine how the address for each  
                      transfer within the burst is calculated  
-                  -__AWVALID (MASTER TO SLAVE)__  
+                  -AWVALID (MASTER TO SLAVE)  
                      Indicates that the channel is signaling valid write address and control information.  
-                  -__AWREADY (SLAVE TO MASTER)__  
+                  -AWREADY (SLAVE TO MASTER)  
                      Slave Indicates that the slave is ready to accept an address and associated control signals.  
                        
             WRITE DATA CHANNEL:_
