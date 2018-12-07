@@ -94,7 +94,6 @@ Cost Group   : '400Mhz' (path_group '400Mhz')
 Timing slack :    5279ps  
 Start-point  : WRITE/rd_ptr_reg_reg[17]/CK  
 End-point    : WRITE/wr_ptr_reg_reg[32]/D  
-
                   
                   
 
