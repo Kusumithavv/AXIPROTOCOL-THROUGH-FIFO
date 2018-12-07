@@ -1,10 +1,10 @@
 # AMBA -Advanced Microcontroller Bus Architecture
 AMBA is an standard onchip Interconnect by ARM.  
-![AMBA_SYSTEM] /AXIPROTOCOL-THROUGH-FIFO/blob/master/IMAGES/iMAGES_AMBA/AMBA%20SYSTEM.png
+![AMBA_SYSTEM] https://github.com/Kusumithavv/AXIPROTOCOL-THROUGH-FIFO/blob/master/IMAGES/iMAGES_AMBA/AMBA%20SYSTEM.png
 # PROJECT: Simulation and synthesis of AMBA AXI4 Protocol.
 ==========================================================
-> Design Modules:
-
+> Design Modules:  
+![ alt FIFO_ARCHITECTURE]https://github.com/Kusumithavv/AXIPROTOCOL-THROUGH-FIFO/blob/master/IMAGES/iMAGES_AMBA/FIFO_ARCHITECTURE.png
 -__AXI FIFO (axi_fifo.v)__  
     - This is the Top module instantiating read and write transaction channel from master to the slave.
 -__AXI FIFO WRITE (axi_fifo_wr.v)__  
