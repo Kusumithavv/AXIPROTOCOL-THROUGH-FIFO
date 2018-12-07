@@ -10,3 +10,4 @@ axi_fifo_rd.v - module performing read operation from slave by master
 axi_fifo_wr.v- module performing write operation to slave from master
 memory.v - memory instantiation
 tb_axi_fifo.v - testbench 
+
