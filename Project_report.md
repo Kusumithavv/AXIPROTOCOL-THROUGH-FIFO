@@ -4,7 +4,7 @@ AMBA is an standard onchip Interconnect by ARM.
 ==========================================================
 > Design Modules:
 
-> AXI FIFO (axi_fifo.v)
+-AXI FIFO (axi_fifo.v)
     > This is the Top module instantiating read and write transaction channel from master to the slave.
 > AXI FIFO WRITE (axi_fifo_wr.v)
     > Transaction channel initiating write operation from master to the slave.
